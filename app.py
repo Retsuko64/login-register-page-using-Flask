@@ -3,7 +3,9 @@ from flask_pymongo import PyMongo
 
 app = Flask(__name__) # Main constructor
 app.config['SECRET_KEY'] ='f5c489e7d6f1d7f1baf21fc0af63bd81da37aa78'
-app.config['MONGO_URI'] = "mongodb+srv://retsuko64:BurnTheCity2077@userdatabase.y6dccqo.mongodb.net/user?retryWrites=true&w=majority"
+app.config['MONGO_URI'] = "mongodb+srv://retsuko64:<Password>@userdatabase.y6dccqo.mongodb.net/user?retryWrites=true&w=majority"
+# Replace <Password> with your own password
+
 
 # Set up MongoDB
 mongodb_client = PyMongo(app)
